@@ -375,6 +375,7 @@ body {
     align-items: center;
   }
 
+
   h2 {
     font-size: 1.1em;
   }
@@ -735,6 +736,133 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* modal button */
+
+  .modal-btn {
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+/* modal */
+
+  .modal {
+    background-color: rgba(0,0,0,.65);
+    display: none;
+    overflow: auto;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* modal content */
+
+  .modal-content {
+    position: relative;
+    top: 150px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #3498db;
+    //background-color: #3498db;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .modal-animated-in {
+    animation: totop-in .3s ease;
+  }
+  .modal-animated-out {
+    animation: totop-out .3s ease forwards;
+  }
+  .modal-header {
+    background-color: #21252b;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+  }
+  .modal-content .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #222;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .modal-content .close:hover {
+    background-color: #fff;
+    color: #222;
+  }
+
+/* modal body */
+
+  .modal-body {
+    padding: 0 20px;
+  }
+  .modal-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .modal-body ul li {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    color: #555;
+  }
+  .modal-body ul li::before {
+    position: absolute;
+    content: '\f00c';
+    color: #5cc560;
+    left: -20px;
+    top: 10px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* modal footer */
+
+  .modal-footer {
+    background-color: #21252b;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+  }
+  .modal-header h3,
+  .modal-footer h3 {
+    color: #fff;
+  }
+
+  /* Keyframes for modal */
+
+  @keyframes totop-in {
+    0% {
+      top: 600px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes totop-out {
+    0% {
+      top: 0px;
+      opacity: 1;
+    }
+    100% {
+      top: -100%;
+      opacity: 0;
+    }
+  }
 
 }
 

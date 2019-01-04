@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Slabo+13px" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
   </head>
 
@@ -20,13 +21,14 @@
 
       </sidebar>
 
-      <main class="main-1">
+      <main class="main-1 wrapper">
 
         <div class="category item-1" id="c-suite">
           <h2>C-SUITE</h2>
         </div>
         <div class="client item-2 c-suite">
-          <img src="images/bumble_transparent.png" alt="bumble logo">
+          <img src="images/bumble_transparent.png" alt="bumble logo" class="modal-btn" id="modBtn">
+
         </div>
         <div class="client item-3 c-suite">
           <img src="images/weebly_transparent.png" alt="weebly logo">
@@ -140,7 +142,47 @@
 
       </main>
 
+<!-- Modal -->
+
+     <div id="modal" class="modal">
+
+<!-- Modal Content -->
+
+       <div class="modal-content">
+
+<!-- Modal Header -->
+
+         <div class="modal-header">
+           <h3 class="header-title">Modal Header</h3>
+           <div class="close fa fa-close"></div>
+         </div>
+
+<!-- Modal Body -->
+
+         <div class="modal-body">
+           <h3>Hello</h3>
+           <p>I'm the modal! do you see me?! Did you notice my width?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptatem amet voluptatum fuga temporibus.</p>
+           <ul>
+             <li>Phosfluorescently fashion ubiquitous schemas through.</li>
+             <li>Rapidiously empower premier initiatives whereas.</li>
+             <li>Credibly disintermediate economically sound.</li>
+             <li>Efficiently grow prospective bandwidth.</li>
+           </ul>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus nemo et magni soluta voluptatibus quas quasi pariatur necessitatibus, totam, officia id at praesentium fuga molestias numquam ullam iure accusamus.</p>
+         </div>
+
+         <div class="modal-footer">
+           <h3>Modal Footer</h3>
+         </div>
+
+       </div>
+
+      </div>
+
     </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="scripts.js"></script>
 
   </body>
 
